@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-no-scroll>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,11 +20,20 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body data-no-scroll>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
+
+    <main>
+      <include src="./partials/1-main/more-photos.html"></include>
+    </main>
+
+    <include src="./partials/1-main/gallery-overlay.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+
+    <!-- Modal script for gallery click synchronization and lazy-loading -->
+    <script src="./js/more-photos.js" async defer></script>
   </body>
 </html>
