@@ -7,7 +7,7 @@
       <!-- Список карточек "Більше Фото" -->
       <ul
         class="more-photos__list"
-        data-photos-list
+        data-preview-list
         data-placeholder="Заполнитель"
         aria-controls="gallery-overlay-id"
         aria-expanded="false"
@@ -23,7 +23,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-01/design-hq-3d-models-406.webp    406w,
                     ./images/main/more-photos/desktop/more-01/design-hq-3d-models-812@2x.webp 812w
                   "
@@ -33,7 +33,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-01/design-hq-3d-models-406.jpg    406w,
                     ./images/main/more-photos/desktop/more-01/design-hq-3d-models-812@2x.jpg 812w
                   "
@@ -44,7 +44,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-01/design-3d-printed-hq-models-248.webp    248w,
                     ./images/main/more-photos/tablet/more-01/design-3d-printed-hq-models-496@2x.webp 496w
                   "
@@ -55,7 +55,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-01/design-3d-printed-hq-models-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-01/design-3d-printed-hq-models-496@2x.jpg 496w
                   "
@@ -66,7 +66,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-01/design-hq-3d-model-for-3d-printer-280.webp    280w,
                     ./images/main/more-photos/mobile/more-01/design-hq-3d-model-for-3d-printer-560@2x.webp 560w
                   "
@@ -75,9 +75,9 @@
                 <!-- 320px - 280x179 jpg - default 1st image -->
                 <img
                   class="photos-card__image image"
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-01/design-hq-3d-model-for-3d-printer-280.jpg    280w,
                     ./images/main/more-photos/mobile/more-01/design-hq-3d-model-for-3d-printer-560@2x.jpg 560w
                   "
@@ -93,7 +93,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-01/design-hq-3d-model-for-3d-printer-280.jpg      280w,
                     ./images/main/more-photos/mobile/more-01/design-hq-3d-model-for-3d-printer-560@2x.jpg   560w,
                     ./images/main/more-photos/mobile/more-01/design-hq-3d-model-for-3d-printer-840@3x.jpg   840w,
@@ -119,7 +119,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 378px, 26vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-02/architectural-model-378.webp    378w,
                     ./images/main/more-photos/desktop/more-02/architectural-model-756@2x.webp 756w
                   "
@@ -130,7 +130,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 378px, 26vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-02/architectural-model-378.jpg    378w,
                     ./images/main/more-photos/desktop/more-02/architectural-model-756@2x.jpg 756w
                   "
@@ -141,7 +141,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 231px, 30vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-02/3d-printed-architectural-model-231.webp    231w,
                     ./images/main/more-photos/tablet/more-02/3d-printed-architectural-model-462@2x.webp 462w
                   "
@@ -152,7 +152,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 231px, 30vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-02/3d-printed-architectural-model-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-02/3d-printed-architectural-model-462@2x.jpg 462w
                   "
@@ -163,7 +163,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-02/3d-printed-architectural-model-280.webp    280w,
                     ./images/main/more-photos/mobile/more-02/3d-printed-architectural-model-560@2x.webp 560w
                   "
@@ -172,9 +172,9 @@
                 <!-- 320px - 280x193 jpg - default 2nd image -->
                 <img
                   class="photos-card__image image"
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 378px, (min-width: 768px) 231px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-02/3d-printed-architectural-model-280.jpg    280w,
                     ./images/main/more-photos/mobile/more-02/3d-printed-architectural-model-560@2x.jpg 560w
                   "
@@ -189,7 +189,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 378px, (min-width: 768px) 231px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-02/3d-printed-architectural-model-280.jpg      280w,
                     ./images/main/more-photos/mobile/more-02/3d-printed-architectural-model-560@2x.jpg   560w,
                     ./images/main/more-photos/mobile/more-02/3d-printed-architectural-model-840@3x.jpg   840w,
@@ -215,7 +215,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 214px, 15vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-03/wall-e-214.webp    214w,
                     ./images/main/more-photos/desktop/more-03/wall-e-428@2x.webp 428w
                   "
@@ -226,7 +226,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 214px, 15vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-03/wall-e-214.jpg    214w,
                     ./images/main/more-photos/desktop/more-03/wall-e-428@2x.jpg 428w
                   "
@@ -237,7 +237,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 131px, 17vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-03/wall-e-131.webp    131w,
                     ./images/main/more-photos/tablet/more-03/wall-e-262@2x.webp 262w
                   "
@@ -248,7 +248,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 131px, 17vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-03/wall-e-131.jpg    131w,
                     ./images/main/more-photos/tablet/more-03/wall-e-262@2x.jpg 262w
                   "
@@ -259,7 +259,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-03/wall-e-280.webp    280w,
                     ./images/main/more-photos/mobile/more-03/wall-e-560@2x.webp 560w
                   "
@@ -268,9 +268,9 @@
                 <!-- 320px - 280x340 jpeg - default 3rd image -->
                 <img
                   class="photos-card__image image"
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 214px, (min-width: 768px) 131px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-03/wall-e-280.jpg    280w,
                     ./images/main/more-photos/mobile/more-03/wall-e-560@2x.jpg 560w
                   "
@@ -285,7 +285,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 214px, (min-width: 768px) 131px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/mobile/more-03/wall-e-280.jpg    280w,
                     ./images/main/more-photos/mobile/more-03/wall-e-560@2x.jpg 560w
                   "
@@ -309,7 +309,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 214px, 15vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-04/skull-214.webp    214w,
                     ./images/main/more-photos/desktop/more-04/skull-428@2x.webp 428w
                   "
@@ -320,7 +320,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 214px, 15vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-04/skull-214.jpg    214w,
                     ./images/main/more-photos/desktop/more-04/skull-428@2x.jpg 428w
                   "
@@ -331,7 +331,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 131px, 17vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-04/skull-model-131.webp    131w,
                     ./images/main/more-photos/tablet/more-04/skull-model-262@2x.webp 262w
                   "
@@ -342,7 +342,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 131px, 17vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-04/skull-model-131.jpg    131w,
                     ./images/main/more-photos/tablet/more-04/skull-model-262@2x.jpg 262w
                   "
@@ -353,7 +353,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-04/skull-model-131.webp    131w,
                     ./images/main/more-photos/tablet/more-04/skull-model-262@2x.webp 262w
                   "
@@ -363,9 +363,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 214px, (min-width: 768px) 131px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-04/skull-model-131.jpg    131w,
                     ./images/main/more-photos/tablet/more-04/skull-model-262@2x.jpg 262w
                   "
@@ -380,7 +380,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 214px, (min-width: 768px) 131px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-04/skull-model-131.jpg    131w,
                     ./images/main/more-photos/tablet/more-04/skull-model-262@2x.jpg 262w,
                     ./images/main/more-photos/tablet/more-04/skull-model-392@3x.jpg 392w,
@@ -406,7 +406,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 378px, 26vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-05/T-29-tank-3d-model-378.webp    378w,
                     ./images/main/more-photos/desktop/more-05/T-29-tank-3d-model-756@2x.webp 756w
                   "
@@ -417,7 +417,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 378px, 26vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-05/T-29-tank-3d-model-378.jpg    378w,
                     ./images/main/more-photos/desktop/more-05/T-29-tank-3d-model-756@2x.jpg 756w
                   "
@@ -428,7 +428,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 231px, 30vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-231.webp    231w,
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-462@2x.webp 462w
                   "
@@ -439,7 +439,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 231px, 30vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-462@2x.jpg 462w
                   "
@@ -450,7 +450,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-462@2x.jpg 462w
                   "
@@ -460,9 +460,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 378px, (min-width: 768px) 231px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-462@2x.jpg 462w
                   "
@@ -477,7 +477,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 378px, (min-width: 768px) 231px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-462@2x.jpg 462w,
                     ./images/main/more-photos/tablet/more-05/T-29-tank-3d-model-693@3x.jpg 693w,
@@ -503,7 +503,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-06/lamps-406.webp    406w,
                     ./images/main/more-photos/desktop/more-06/lamps-812@2x.webp 812w
                   "
@@ -514,7 +514,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-06/lamps-406.jpg    406w,
                     ./images/main/more-photos/desktop/more-06/lamps-812@2x.jpg 812w
                   "
@@ -525,7 +525,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-06/two-lamps-248.webp    248w,
                     ./images/main/more-photos/tablet/more-06/two-lamps-496@2x.webp 496w
                   "
@@ -536,7 +536,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-06/two-lamps-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-06/two-lamps-496@2x.jpg 496w
                   "
@@ -547,7 +547,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-06/two-lamps-248.webp    248w,
                     ./images/main/more-photos/tablet/more-06/two-lamps-496@2x.webp 496w
                   "
@@ -557,9 +557,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-06/two-lamps-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-06/two-lamps-496@2x.jpg 496w
                   "
@@ -574,7 +574,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-06/two-lamps-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-06/two-lamps-496@2x.jpg 496w
                   "
@@ -598,7 +598,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-07/sportcar-406.webp    406w,
                     ./images/main/more-photos/desktop/more-07/sportcar-812@2x.webp 812w
                   "
@@ -609,7 +609,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-07/sportcar-406.jpg    406w,
                     ./images/main/more-photos/desktop/more-07/sportcar-812@2x.jpg 812w
                   "
@@ -620,7 +620,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-07/sportcar-248.webp    248w,
                     ./images/main/more-photos/tablet/more-07/sportcar-496@2x.webp 496w
                   "
@@ -631,7 +631,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-07/sportcar-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-07/sportcar-496@2x.jpg 496w
                   "
@@ -642,7 +642,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-07/sportcar-248.webp    248w,
                     ./images/main/more-photos/tablet/more-07/sportcar-496@2x.webp 496w
                   "
@@ -652,9 +652,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-07/sportcar-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-07/sportcar-496@2x.jpg 496w
                   "
@@ -669,7 +669,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-07/sportcar-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-07/sportcar-496@2x.jpg 496w,
                     ./images/main/more-photos/tablet/more-07/sportcar-744@3x.jpg 744w,
@@ -695,7 +695,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 405px, 28vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-08/round-building-405.webp    405w,
                     ./images/main/more-photos/desktop/more-08/round-building-810@2x.webp 810w
                   "
@@ -706,7 +706,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 405px, 28vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-08/round-building-405.jpg    405w,
                     ./images/main/more-photos/desktop/more-08/round-building-810@2x.jpg 810w
                   "
@@ -717,7 +717,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-08/round-building-248.webp    248w,
                     ./images/main/more-photos/tablet/more-08/round-building-495@2x.webp 495w
                   "
@@ -728,7 +728,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-08/round-building-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-08/round-building-495@2x.jpg 495w
                   "
@@ -739,7 +739,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-08/round-building-248.webp    248w,
                     ./images/main/more-photos/tablet/more-08/round-building-495@2x.webp 495w
                   "
@@ -749,9 +749,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 405px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-08/round-building-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-08/round-building-495@2x.jpg 495w
                   "
@@ -766,7 +766,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 405px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-08/round-building-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-08/round-building-495@2x.jpg 495w,
                     ./images/main/more-photos/tablet/more-08/round-building-743@3x.jpg 743w,
@@ -792,7 +792,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 187px, 13vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-09/mushroom-lamp-187.webp    187w,
                     ./images/main/more-photos/desktop/more-09/mushroom-lamp-374@2x.webp 374w
                   "
@@ -803,7 +803,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 187px, 13vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-09/mushroom-lamp-187.jpg    187w,
                     ./images/main/more-photos/desktop/more-09/mushroom-lamp-374@2x.jpg 374w
                   "
@@ -814,7 +814,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 115px, 15vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-115.webp    115w,
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-229@2x.webp 229w
                   "
@@ -825,7 +825,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 115px, 15vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-115.jpg    115w,
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-229@2x.jpg 229w
                   "
@@ -836,7 +836,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-115.webp    115w,
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-229@2x.webp 229w
                   "
@@ -846,9 +846,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 187px, (min-width: 768px) 115px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-115.jpg    115w,
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-229@2x.jpg 229w
                   "
@@ -863,7 +863,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 187px, (min-width: 768px) 115px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-115.jpg    115w,
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-229@2x.jpg 229w,
                     ./images/main/more-photos/tablet/more-09/mushroom-lamp-343@3x.jpg 343w,
@@ -889,7 +889,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 214px, 15vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-10/speakers-214.webp    214w,
                     ./images/main/more-photos/desktop/more-10/speakers-428@2x.webp 428w
                   "
@@ -900,7 +900,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 214px, 15vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-10/speakers-214.jpg    214w,
                     ./images/main/more-photos/desktop/more-10/speakers-428@2x.jpg 428w
                   "
@@ -911,7 +911,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 131px, 17vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-10/speakers-131.webp    131w,
                     ./images/main/more-photos/tablet/more-10/speakers-262@2x.webp 262w
                   "
@@ -922,7 +922,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 131px, 17vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-10/speakers-131.jpg    131w,
                     ./images/main/more-photos/tablet/more-10/speakers-262@2x.jpg 262w
                   "
@@ -933,7 +933,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-10/speakers-131.webp    131w,
                     ./images/main/more-photos/tablet/more-10/speakers-262@2x.webp 262w
                   "
@@ -943,9 +943,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 214px, (min-width: 768px) 131px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-10/speakers-131.jpg    131w,
                     ./images/main/more-photos/tablet/more-10/speakers-262@2x.jpg 262w
                   "
@@ -960,7 +960,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 214px, (min-width: 768px) 131px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-10/speakers-131.jpg    131w,
                     ./images/main/more-photos/tablet/more-10/speakers-262@2x.jpg 262w,
                     ./images/main/more-photos/tablet/more-10/speakers-392@3x.jpg 392w,
@@ -986,7 +986,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 378px, 26vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-11/сybertruck-378.webp    378w,
                     ./images/main/more-photos/desktop/more-11/сybertruck-756@2x.webp 756w
                   "
@@ -997,7 +997,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 378px, 26vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-11/сybertruck-378.jpg    378w,
                     ./images/main/more-photos/desktop/more-11/сybertruck-756@2x.jpg 756w
                   "
@@ -1008,7 +1008,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 231px, 30vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-11/cybertruck-231.webp    231w,
                     ./images/main/more-photos/tablet/more-11/cybertruck-462@2x.webp 462w
                   "
@@ -1019,7 +1019,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 231px, 30vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-11/cybertruck-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-11/cybertruck-462@2x.jpg 462w
                   "
@@ -1030,7 +1030,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-11/cybertruck-231.webp    231w,
                     ./images/main/more-photos/tablet/more-11/cybertruck-462@2x.webp 462w
                   "
@@ -1040,9 +1040,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 378px, (min-width: 768px) 231px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-11/cybertruck-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-11/cybertruck-462@2x.jpg 462w
                   "
@@ -1057,7 +1057,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 378px, (min-width: 768px) 231px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-11/cybertruck-231.jpg    231w,
                     ./images/main/more-photos/tablet/more-11/cybertruck-462@2x.jpg 462w,
                     ./images/main/more-photos/tablet/more-11/cybertruck-693@3x.jpg 693w,
@@ -1083,7 +1083,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-12/3d-hexagon-for-plants-406.webp    406w,
                     ./images/main/more-photos/desktop/more-12/3d-hexagon-for-plants-812@2x.webp 812w
                   "
@@ -1094,7 +1094,7 @@
                   media="(min-width: 1440px)"
                   sizes="(min-width: 1440px) 406px, 28vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/desktop/more-12/3d-hexagon-for-plants-406.jpg    406w,
                     ./images/main/more-photos/desktop/more-12/3d-hexagon-for-plants-812@2x.jpg 812w
                   "
@@ -1105,7 +1105,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-248.webp    248w,
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-496@2x.webp 496w
                   "
@@ -1116,7 +1116,7 @@
                   media="(min-width: 768px)"
                   sizes="(min-width: 768px) 248px, 32vw"
                   type="image/jpeg"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-496@2x.jpg 496w
                   "
@@ -1127,7 +1127,7 @@
                   media="(max-width: 767px)"
                   sizes="(max-width: 767px) 280px, 88vw"
                   type="image/webp"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-248.webp    248w,
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-496@2x.webp 496w
                   "
@@ -1137,9 +1137,9 @@
                 <img
                   class="photos-card__image image"
                   data-photos-below-fold
-                  data-photos-lazy
+                  data-preview-photo-lazy
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-496@2x.jpg 496w
                   "
@@ -1154,7 +1154,7 @@
                 <img
                   class="photos-card__image image"
                   sizes="(min-width: 1440px) 406px, (min-width: 768px) 248px, 88vw"
-                  srcset="
+                  data-srcset="
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-248.jpg    248w,
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-496@2x.jpg 496w,
                     ./images/main/more-photos/tablet/more-12/3d-hexagon-for-plants-744@3x.jpg 744w,
@@ -1172,10 +1172,10 @@
       </ul>
     </div>
 
-    <div class="more-photos__svg-wrapper" data-photos-loader>
+    <button type="button" class="more-photos__btn" data-photos-loader>
       <svg class="more-photos__icon-loader system-uicons-loader svg" width="45" height="45">
         <use class="more-photos__icon-loader-use" href="./images/svg-sprite.svg#loading-icon"></use>
       </svg>
-    </div>
+    </button>
   </div>
 </section>

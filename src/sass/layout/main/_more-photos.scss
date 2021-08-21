@@ -85,7 +85,7 @@
   &.is-hidden {
     @include mq($end: $tablet) {
       position: absolute;
-      transform: translateX(50%) scaleX(0);
+      transform: translateX(200%) scaleX(0);
     }
 
     @include mq($tablet) {
@@ -133,8 +133,11 @@
   max-height: 85vh;
 }
 
-.more-photos__svg-wrapper {
-  text-align: center;
+.more-photos__btn {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
 }
 
 .system-uicons-loader {
@@ -209,8 +212,22 @@
     display: flex;
   }
 
-  &__item.is-hidden {
-    position: absolute;
+  &__item {
+    left: 210%;
+
+    &.is-hidden {
+      position: absolute;
+    }
+
+    // &.current-slide {  }
+    &.current-slide ~ &.is-hidden {
+      left: unset;
+      right: 210%;
+    }
+
+    &.current-slide + &.is-hidden {
+      transform: translateX(100%);
+    }
   }
 
   &__thumb {
