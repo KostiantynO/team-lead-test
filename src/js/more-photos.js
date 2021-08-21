@@ -1,3 +1,4 @@
+'use strict';
 (() => {
   const mission = `Mission:
     1. Синхронизировать клик по картинке между мелким фото и оригиналом в модалке.
@@ -11,19 +12,19 @@
   const btnNext = document.querySelector('[data-gallery-next]');
 
   alert(`${refs.mission}`);
-  let listImg = [];
-  listImg.push(...btn.childNodes);
+  let previewListImgs = [];
+  previewListImgs.push(...btn.childNodes);
+
+  const previewListMap = previewListImgs.filter(num => {
+    return num.nodeName === 'LI';
+  });
+  const listImgPicture = previewListMap.map(num => {
+    console.log('Hello');
+    return num.children[0].children[0].children[0].attributes[0].nodeValue;
+  });
+  let counter = 0;
 
   /*
-const listMap = listImg.filter((num) => {
-    return num.nodeName === "LI"
-})
-const listImgPicture = listMap.map((num) => {
-    return num.children[0].children[0].children[0].attributes[0].nodeValue
-})
-let counter = 0;
-
-
 const modalOpen = (even) => {
     even.preventDefault()
     if (even.target.nodeName !== "IMG") {

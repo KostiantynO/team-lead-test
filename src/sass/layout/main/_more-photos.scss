@@ -116,20 +116,21 @@
 }
 
 .photos-card__image {
-  opacity: 0;
-  transform: translateX(50%) scaleX(0);
+  // @include mq($end: $tablet) {
+  //   opacity: 0;
+  //   transform: translateX(50%) scaleX(0);
+  // }
+  &.appear {
+    transition-property: transform, opacity;
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+    @include animation;
+  }
 }
 
 .gallery-card__image {
   width: 100%;
   max-height: 85vh;
-}
-
-.appear {
-  transition-property: transform, opacity;
-  opacity: 1;
-  transform: translateX(0) scaleX(1);
-  @include animation;
 }
 
 .more-photos__svg-wrapper {
