@@ -1,4 +1,3 @@
-const btn = document.querySelector('.masonry');
 const imgPic = document.querySelectorAll('.masonry__img-task');
 const backdrop = document.querySelector('.backdrop');
 const imgSrc = document.querySelector('.modal-window__img');
@@ -51,4 +50,3 @@ const modalClose = even => {
   backdrop.removeEventListener('click', modalClose);
   backdrop.classList.remove('is-active');
 };
-btn.addEventListener('click', modalOpen);
